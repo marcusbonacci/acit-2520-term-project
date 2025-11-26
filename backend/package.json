@@ -1,0 +1,20 @@
+{
+  "name": "web-api",
+  "version": "0.0.1",
+  "description": "Welcome, this repo is part of my youtube video about Creating and testing a complete Node.js Rest API (With no frameworks).",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --watch src/index.js",
+    "test": "node --test --test-reporter node-test-reporter 'tests/api.test.js'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
+    "node-test-reporter": "^1.2.0"
+  }
+}

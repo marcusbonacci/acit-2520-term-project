@@ -1,0 +1,17 @@
+{
+  "users": [
+    {
+      "id": "c4f61b0b-98fd-45f6-ba0a-e239cb046671",
+      "username": "marcus",
+      "password": "123",
+      "profilePicture": "https://avatars.githubusercontent.com/u/129986981?v=4"
+    }
+  ],
+  "tips": [
+    {
+      "id": "f4f00383-a1d5-4154-bf3d-dfbd868ffd53",
+      "title": "Always use virtual environments when working with python on UNIX systems.",
+      "userId": "c4f61b0b-98fd-45f6-ba0a-e239cb046671"
+    }
+  ]
+}

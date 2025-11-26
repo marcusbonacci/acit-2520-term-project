@@ -1,0 +1,176 @@
+/* --- BCIT Color Palette --- */
+:root {
+  --bcit-blue: #003c71;
+  --bcit-blue-light: #0077c8;
+  --bcit-grey-bg: #f2f2f2;
+  --bcit-grey-border: #d4d4d4;
+  --bcit-grey-text: #6e6e6e;
+}
+
+/* --- Base Layout & Typography --- */
+
+body {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bcit-grey-bg);
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+#app {
+  max-width: 680px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+/* --- Headings --- */
+
+h1 {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--bcit-blue);
+  margin-bottom: 20px;
+}
+
+nav {
+  margin-bottom: 20px;
+}
+
+nav a {
+  margin-right: 12px;
+  text-decoration: none;
+  color: var(--bcit-blue-light);
+  font-weight: 600;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* --- Forms --- */
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+input,
+button,
+textarea {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--bcit-grey-border);
+  font-size: 15px;
+}
+
+input:focus,
+textarea:focus {
+  outline: 2px solid var(--bcit-blue-light);
+  border-color: transparent;
+}
+
+/* Buttons use BCIT primary blue */
+button {
+  background: var(--bcit-blue);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.15s;
+}
+
+button:hover {
+  background: var(--bcit-blue-light);
+}
+
+.error {
+  color: #8b0000;
+  background: #ffe0e0;
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Don’t show when empty */
+.error:empty {
+  display: none;
+}
+
+/* --- Tip Cards --- */
+
+.card {
+  background: #fff;
+  padding: 14px 18px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  border: 1px solid var(--bcit-grey-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  transition: box-shadow 0.2s, border 0.2s;
+}
+
+.card:hover {
+  border-color: var(--bcit-blue-light);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* --- Avatar & Layout --- */
+
+.tip-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+}
+
+.avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 2px solid var(--bcit-grey-border);
+  object-fit: cover;
+}
+
+/* --- Tip Text --- */
+
+.tip-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.tip-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--bcit-blue);
+}
+
+.tip-username {
+  font-size: 13px;
+  color: var(--bcit-grey-text);
+  margin-top: 2px;
+}
+
+/* --- Actions --- */
+
+.tip-actions button {
+  margin-left: 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 4px;
+  border-radius: 6px;
+  transition: background 0.15s;
+  color: var(--bcit-blue-light);
+}
+
+.tip-actions button:hover {
+  background: #e9f3ff;
+}
